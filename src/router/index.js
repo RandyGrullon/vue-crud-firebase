@@ -16,6 +16,11 @@ const routes = [
     path: '/edit/:id',
     name: 'Edit',
     component: () => import(/* webpackChunkName: "about" */ '../views/EditView.vue')
+  },
+  {
+    path: '/registro/',
+    name: 'Registro',
+    component: () => import(/* webpackChunkName: "about" */ '../views/RegistroView.vue')
   }
 ]
 
