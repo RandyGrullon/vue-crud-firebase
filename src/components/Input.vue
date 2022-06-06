@@ -46,7 +46,6 @@ export default {
         tarea: {
             type: Object,
             required: true
-
         },
     },
     computed: {
@@ -58,4 +57,4 @@ export default {
 </script>
 <style lang="">
     
-</style>
+</style> 

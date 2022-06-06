@@ -11,10 +11,7 @@ import Input from '../components/Input';
 import { mapActions } from 'vuex';
 import DataTable from '../components/DataTable';
 import Titulo from '@/components/Titulo';
-
-
 const shortid = require('shortid');
-
 export default {
   name: 'HomeView',
   components: {
@@ -35,7 +32,6 @@ export default {
   methods:{
     ...mapActions(['setTareas']),
     ...mapActions(['Tareas']),
-
     ProcesarTarea(){
       console.log(this.tarea);
       if(this.tarea.nombre.trim() == '' ){
@@ -43,14 +39,10 @@ export default {
         return;
       }
       console.log('Tarea Procesada');
-
       //generar ID
       this.tarea.id = shortid.generate();
-
       //enviar tarea
       this.setTareas(this.tarea);
-
-
       this.tarea = {
         id: '',
         nombre: '',

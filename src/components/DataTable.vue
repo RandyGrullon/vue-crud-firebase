@@ -38,9 +38,7 @@
     </div>
 </template>
 <script>
-
 import { mapState, mapActions } from 'vuex';
-
 export default {
     
     computed: {
@@ -49,12 +47,7 @@ export default {
     methods: {
         ...mapActions(['deleteTareas'])
     }
-
-
-
-
 }
-
 </script>
 <style>
-</style>
+</style> 

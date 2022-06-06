@@ -5,23 +5,14 @@
   </div>
 </template>
 <script>
+import { mapActions } from 'vuex'
 import Navbar from './components/Navbar.vue'
-import { mapActions } from 'vuex';
-
 export default {
   name: 'App',
   components: {
     Navbar
   },
-  methods: {
-    
-    ...mapActions(['CargarLocalStorage']),
-  },
-  created() {
-    this.CargarLocalStorage();
-  },
 }
-
 </script>
 
 <style>

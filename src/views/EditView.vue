@@ -11,7 +11,6 @@
 <script>
 import { mapState, mapActions } from 'vuex';
 import Input from '@/components/Input.vue';
-
 export default {
   computed: {
     ...mapState(["tarea"])
@@ -26,8 +25,7 @@ export default {
     Input
   }
 }
-
 </script>
 
 <style>
-</style>
+</style> 
